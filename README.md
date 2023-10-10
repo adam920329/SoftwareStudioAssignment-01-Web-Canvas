@@ -1,5 +1,5 @@
-# SoftwareStudioAssignment-01-Web-Canvas
-SoftwareStudioAssignment-01-Web-Canvas
+# CS-SoftwareStudioAssignment-01-Web-Canvas
+CS-SoftwareStudioAssignment-01-Web-Canvas
 
 Notice:
   1. Use Firebase as server side
