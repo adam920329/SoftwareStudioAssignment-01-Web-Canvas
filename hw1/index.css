@@ -1,0 +1,154 @@
+body{
+    background-image:url("pic/wood.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.myCanvas{
+    position: relative;
+    left:20px;
+    border:5px inset #000000;
+    border-radius:8px;
+    background-color: white;
+    float:left;
+}
+.myTool{
+    width:400px;
+    height:700px;
+    position: relative;
+    right:20px;
+    border:5px outset transparent;
+    background-color: transparent;
+    float:right;
+}
+.myColor{
+    width:400px;
+    height:250px;
+    position:relative;
+    left:25px;
+    top:1px;
+    background-color: transparent;
+}
+.myRange{
+    width:300px;
+    height:30px;
+    position:relative;
+    left:0px;
+    top:15px;
+    background-color: transparent;
+}
+#Rangechange{
+    width:200px;
+    position:relative;
+    left:80px;
+    top:0px;
+}
+#rangenum{
+    width:37px;
+    height:20px;
+    position:relative;
+    display: inline-block;
+    left:65px;
+    top:0px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+#show{
+    position:relative;
+    left:2px;
+    display: inline-block; 
+    font-family: "Arial Black";
+}
+#pencil_cmp{
+    position:relative;
+    left:50px;
+    top:4px;
+}
+
+.myFont{
+    width:300px;
+    height:30px;
+    position:relative;
+    left:50px;
+    top:25px;
+    background-color: transparent;
+}
+#text_cmp{
+    display: inline-block; 
+}
+#fontSelect{
+    width:150px;
+    position:relative;
+    left:20px;
+    bottom:8px;
+}
+#fontSize{
+    width:60px;
+    position:relative;
+    left:20px;
+    bottom:8px;
+}
+.myTable{
+    width:400px;
+    height:340px;
+    position:relative;
+    top:30px;
+    background-color: transparent;
+}
+.row{
+    width: 20px;
+    text-align:center;
+    position:center;
+    line-height: 30px;
+}
+button{
+    width:"60px"; 
+    height:"60px"; 
+    background-color: transparent;
+    border-color: rgba(146, 176, 146, 0.779);
+    border-radius: 5px;
+    border-width: 5px;
+}
+.pic{
+    position:relative;
+    top:2px;
+}
+
+#Canvas1{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+#tool{
+    border-color: #77330c68;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+#colornow{
+    border-radius:5px;
+    position: relative;
+    bottom: 40px; 
+    left: 10px;
+    background-color: black;
+    border: solid 1px #ffffff;
+}
+#colorselect {
+    border-radius:5px;
+    position: relative;
+    top: 25px; 
+    left: 10px;
+    background-color: transparent;
+    border: solid 1px #ffffff;
+}
+#colorline{
+    border-radius:5px;
+    position: relative;
+    top: 25px; 
+    left: 10px;
+    background-color: transparent;
+    border: solid 1px #ffffff;
+}
+
+

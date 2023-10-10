@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>canvas</title>
+
+    <!-- CSS and javascript -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class="myCanvas">
+        <canvas id="Canvas1"></canvas>
+    </div>
+
+    <div class="myTool">
+        <div class="myColor">
+            <canvas id="colornow"></canvas>
+            <canvas id="colorselect"></canvas>
+            <canvas id="colorline"></canvas>
+        </div>
+        <div class="myRange">
+            <img id="pencil_cmp" src="pic/pencil_cmp.png" width="24px" height="24px">
+            <div id="rangenum"><span id="show">20</span></div>       
+            <input id="Rangechange" type="range" min="1" max="100" step="1" value="20">
+        </div>
+        <div class="myFont">
+            <img id="text_cmp" src="pic/text_cmp.png" width="24px" height="24px">
+            <select id="fontSelect">
+                <option value="Arial Black">Arial Black</option>
+                <option value="Cursive">Cursive</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="PMingLiU">新細明體</option>
+                <option value="DFKai-SB">標楷體</option>
+            </select>
+            <select id="fontSize">
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="24">24</option>
+                <option value="48">48</option>
+                <option value="64">64</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+        <div class="myTable">
+            <table id="tool" style="width:100%; table-layout:fixed;" border="1" cellpadding="3px">
+                <tr class="row">
+                    <td><button id="pencil" onclick="change_mode('pencil')"><img class="pic" src="pic/pencil.png" width="60px"
+                                height="60px"></button></td>
+                    <td><button id="eraser" onclick="change_mode('eraser')"><img class="pic" src="pic/eraser.png" width="60px"
+                                height="60px"></button></td>
+                    <td><button id="text" onclick="change_mode('text')"><img class="pic" src="pic/text.png" width="60px"
+                                height="60px"></button></td>
+                    <td><button id="ruler" onclick="change_mode('ruler')"><img class="pic" src="pic/ruler.png" width="60px"
+                                height="60px"></button></td>
+                </tr>
+                <tr class="row">
+                    <td><button id="circle" onclick="change_mode('circle')"><img class="pic" src="pic/circle.png" width="60px"
+                                height="60px"></button></td>
+                    <td><button id="rectangle" onclick="change_mode('rectangle')"><img class="pic" src="pic/rectangle.png"
+                                width="60px" height="60px"></button></td>
+                    <td><button id="triangle" onclick="change_mode('triangle')"><img class="pic" src="pic/triangle.png" width="60px"
+                                height="60px"></button></td>
+                    <td><button id="fill" onclick="change_mode('fill')"><img class="pic" src="pic/fill.png" width="60px"
+                                height="60px"></button></td>
+                </tr>
+                <tr class="row">
+                    <td><button id="undo" onclick="click_mode('undo')"><img class="pic" src="pic/undo.png" width="60px"
+                                height="60px"></button></td>
+                    <td><button id="redo" onclick="click_mode('redo')"><img class="pic" src="pic/redo.png" width="60px"
+                                height="60px"></button></td>
+                    <td><button id="clear" onclick="click_mode('clear')"><img class="pic" src="pic/clear.png" width="60px"
+                                height="60px"></button></td>
+                    <td><button id="rainbow" onclick="change_mode('rainbow')"><img class="pic" src="pic/rainbow.png" width="60px"
+                                height="60px"></button></td>
+                </tr>
+                <tr class="row">
+                    <td><input type="file" id="imageInput" style="display: none;">
+                        <button id="image_upload" onclick="click_mode('image_upload')">
+                            <label for="imageInput"><img class="pic" src="pic/image_upload.png" width="60px" height="60px"></label>
+                        </button>
+                    </td>
+                    <td><button id="download" onclick="click_mode('download')"><img class="pic" src="pic/download.png" width="60px"
+                                height="60px"></button>
+                    </td>
+                    <td><button id="picker" onclick="change_mode('picker')"><img class="pic" src="pic/picker.png" width="60px" height="60px"></button></td>
+                    <td><button id="reset" onclick="click_mode('reset')"><img class="pic" src="pic/reset.png" width="60px" height="60px"></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
